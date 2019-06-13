@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "caster_copy",
+    "texture": "5fed232b-fa1d-4bc9-b9bb-eff04a272d53",
+    "atlas": "",
+    "rect": [
+      19,
+      0,
+      104,
+      150
+    ],
+    "offset": [
+      3,
+      3
+    ],
+    "originalSize": [
+      136,
+      156
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

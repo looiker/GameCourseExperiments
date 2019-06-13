@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hexa",
+    "texture": "7266bc5f-4c9c-455d-842e-2af12de099ef",
+    "atlas": "",
+    "rect": [
+      0,
+      21,
+      240,
+      159
+    ],
+    "offset": [
+      0,
+      -10.5
+    ],
+    "originalSize": [
+      240,
+      180
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

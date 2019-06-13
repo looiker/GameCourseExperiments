@@ -1,4 +1,4 @@
-cc.Class({
+var Tower=cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -15,22 +15,18 @@ cc.Class({
     },
 
     onLoad () {
-		//隐藏塔菜单、攻击圈
-		this.menu.opacity=0;
-		this.attack_circle.opacity=0;
 		//初始化塔数据
 		this.constructed=false;
 		this.RadiusOfAttack=this.attack_circle.width/2;
-		//禁用塔按钮
-		this.SettingInteractableFalse();
+		this.RetractMenu();
 	},
 
     /*点击塔基*/
     On_TB_clicked:function(){
 		//如果游戏未暂停
         if (this.IfPause() == false) {
-            //启用塔基
-            //this.node.children[1].getComponent(cc.Button).interactable = true;
+			//检查是否有其他塔菜单显示
+			let flag=this.CheckOtherTower();
 			//未建塔，且未显示菜单。则显示箭塔、法塔、炮塔
 			if(this.constructed==false&&this.menu.opacity==0){
 				this.menu.opacity=255;
@@ -57,27 +53,14 @@ cc.Class({
 			}
 			//未建塔，且已显示菜单。则隐藏箭塔、法塔、炮塔
 			else if(this.constructed==false&&this.menu.opacity==255){
-				this.menu.opacity=0;
-				this.archer.opacity=0;
-				this.archer.children[0].getComponent(cc.Button).interactable=false;
-			    this.caster.opacity=0;
-				this.caster.children[0].getComponent(cc.Button).interactable=false;
-				this.gunturret.opacity=0;
-				this.gunturret.children[0].getComponent(cc.Button).interactable=false;
-				this.sale.opacity=0;
+				this.RetractMenu();
 			}
 			//已建塔，且已显示菜单。则隐藏升级、售卖、攻击圈
 			else if(this.constructed==true&&this.menu.opacity==255){
-				this.menu.opacity=0;
-				this.archer.opacity=0;
-				this.caster.opacity=0;
-				this.gunturret.opacity=0;
-				this.UpDate.opacity=0;
-				this.UpDate.children[0].getComponent(cc.Button).interactable=false;
-				this.sale.opacity=0;
-				this.sale.children[0].getComponent(cc.Button).interactable=false;
-				this.attack_circle.opacity=0;
+				this.RetractMenu();
 			}
+			//若有其他塔菜单，则隐藏其菜单
+			this.ClickBackOtherTower(flag);
 		}
 	    //如果游戏暂停，禁用塔按钮
 		else{
@@ -90,7 +73,7 @@ cc.Class({
         //如果游戏未暂停
 	    if (this.IfPause() == false) {
 	        this.constructed = true;
-	        this.menu.opacity = 0;
+	        this.RetractMenu();
 	        //更换箭塔立绘
 	        var realUrl = cc.url.raw('texture/Tower/archer.png');
 	        var temp = this.node.getChildByName("Towerbasic_button").getComponent(cc.Button);
@@ -116,7 +99,7 @@ cc.Class({
         //如果游戏未暂停
         if (this.IfPause() == false) {
             this.constructed = true;
-            this.menu.opacity = 0;
+            this.RetractMenu();
             //更换魔法塔立绘
             var realUrl = cc.url.raw('texture/Tower/caster.png');
             var temp = this.node.getChildByName("Towerbasic_button").getComponent(cc.Button);
@@ -141,7 +124,7 @@ cc.Class({
         //如果游戏未暂停
         if (this.IfPause() == false) {
             this.constructed = true;
-            this.menu.opacity = 0;
+            this.RetractMenu();
             //更换炮塔立绘
             var realUrl = cc.url.raw('texture/Tower/gunturret.png');
             var temp = this.node.getChildByName("Towerbasic_button").getComponent(cc.Button);
@@ -166,7 +149,6 @@ cc.Class({
         //如果游戏未暂停
         if (this.IfPause() == false) {
             this.constructed = false;
-            this.menu.opacity = 0;
             //更新塔基立绘
             var realUrl = cc.url.raw('texture/Tower/Tower_4.png');
             var temp = this.node.getChildByName("Towerbasic_button").getComponent(cc.Button);
@@ -182,7 +164,7 @@ cc.Class({
             this.RadiusOfAttack = this.attack_circle.width / 2;
             //修改并隐藏攻击圈
             this.node.getChildByName("attack_circle_standard").getChildByName("attack_circle_sprite").scale = this.SizeOfAttack;
-            this.attack_circle.opacity = 0;
+            this.RetractMenu();
         }
         //如果游戏暂停，禁用塔按钮
         else {
@@ -191,9 +173,10 @@ cc.Class({
 	},
 	
 	/*收回菜单*/
-	On_CB_clicked:function(){
+	RetractMenu:function(){
+		//隐藏塔菜单、攻击圈
 		this.menu.opacity=0;
-		this.attack_circle.opacity = 0;
+		this.attack_circle.opacity=0;
         //禁用塔按钮
 		this.SettingInteractableFalse();
 	},
@@ -215,5 +198,33 @@ cc.Class({
         this.gunturret.children[0].getComponent(cc.Button).interactable = false;
         this.UpDate.children[0].getComponent(cc.Button).interactable = false;
         this.sale.children[0].getComponent(cc.Button).interactable = false;
-    }
+	},
+	
+	/*收回其他塔的菜单*/
+	ClickBackOtherTower:function(flag){
+		let tower_all=this.node.parent;
+		if(flag!=0){
+			flag-=1;
+			let TargetTower=tower_all.children[flag];
+			let attack_circle=TargetTower.children[0];
+			let menu=TargetTower.children[2];
+			attack_circle.opacity=0;
+				menu.opacity=0;
+				//禁用塔按钮
+				for(let i=1;i<6;i++)
+					menu.children[i].children[0].getComponent(cc.Button).interactable=false;
+		}
+	},
+
+	/*判断是否有其他塔显示菜单,返回值为第i+1个塔，返回0表示无塔显示菜单*/
+	CheckOtherTower:function(){
+		let tower_all=this.node.parent;
+		for(let i=0;i<tower_all.children.length;i++){
+			if(tower_all.children[i].children[2].opacity!=0)
+			return i+1;
+		}
+		return 0;
+	}
 });
+
+export default Tower;

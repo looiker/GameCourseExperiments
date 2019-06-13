@@ -1,0 +1,17 @@
+{
+  "__type__": "cc.TiledMapAsset",
+  "_name": "hexa",
+  "_objFlags": 0,
+  "_native": "",
+  "tmxXmlStr": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<map version=\"1.0\" orientation=\"hexagonal\" renderorder=\"right-down\" width=\"9\" height=\"9\" tilewidth=\"60\" tileheight=\"39\" hexsidelength=\"30\" staggeraxis=\"x\" staggerindex=\"odd\" nextobjectid=\"1\">\r\n <tileset firstgid=\"1\" name=\"Tileset_Hexagonal_FlatTop_60x39_60x60\" tilewidth=\"60\" tileheight=\"60\" tilecount=\"12\" columns=\"4\">\r\n  <image source=\"hexa.png\" width=\"240\" height=\"180\"/>\r\n </tileset>\r\n <layer name=\"Floor\" width=\"9\" height=\"9\">\r\n  <data encoding=\"base64\" compression=\"zlib\">\r\n   eJxjY2BgYINiFiTMhoZh4oxIGFktCxZxbGKMSDQbGh9dDRsW89HV4GOj24/N3eh+w+V/ZLXoYgC/VAE0\r\n  </data>\r\n </layer>\r\n</map>\r\n",
+  "textures": [
+    {
+      "__uuid__": "7266bc5f-4c9c-455d-842e-2af12de099ef"
+    }
+  ],
+  "textureNames": [
+    "hexa.png"
+  ],
+  "tsxFiles": [],
+  "tsxFileNames": []
+}

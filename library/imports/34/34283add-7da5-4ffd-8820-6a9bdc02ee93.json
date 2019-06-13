@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "uibar_1",
+    "texture": "7a525850-309c-4c6c-8c4a-904e338e4eba",
+    "atlas": "",
+    "rect": [
+      0,
+      40,
+      378,
+      108
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      378,
+      189
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

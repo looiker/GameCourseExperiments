@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "buttonbar_2",
+    "texture": "56ad0598-2b50-4f5c-9fc3-abfbf5e06380",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1000,
+      200
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1000,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

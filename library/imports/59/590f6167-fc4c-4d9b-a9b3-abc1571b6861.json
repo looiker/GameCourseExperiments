@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bitback_4",
+    "texture": "e1df9852-7449-4a28-b92d-117e19a0c4de",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      720,
+      200
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      720,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

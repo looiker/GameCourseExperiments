@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "caster_icon",
+    "texture": "9b33a4c4-7e11-4873-81dc-23b0bc301dac",
+    "atlas": "",
+    "rect": [
+      14,
+      11,
+      172,
+      177
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

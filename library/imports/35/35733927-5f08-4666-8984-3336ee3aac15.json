@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Wave",
+    "texture": "672333bb-d1e0-497a-8850-d0fd2affe136",
+    "atlas": "",
+    "rect": [
+      12,
+      0,
+      188,
+      200
+    ],
+    "offset": [
+      6,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -7,13 +7,14 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
+import Tower from "./Tower"
 
 cc.Class({
     extends: cc.Component,
     properties: {
         TowerPrefabs:{
 			default:[],
-			type:cc.Node
+			type:Tower
 		}
     },
 
@@ -21,9 +22,14 @@ cc.Class({
 
     // onLoad () {},
 
-    start () {
-
+    onLoad(){
+        
     },
+
+    on_RetractAllMenu_Clicked:function(){
+        for(let i=0;i<this.TowerPrefabs.length;i++)
+            this.TowerPrefabs[i].RetractMenu();
+    }
 
     // update (dt) {},
 });

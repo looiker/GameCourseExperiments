@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "iso-test",
+    "texture": "1919d9b8-e1f9-4846-8273-ff60a7838bf3",
+    "atlas": "",
+    "rect": [
+      2,
+      1,
+      319,
+      116
+    ],
+    "offset": [
+      -94.5,
+      69
+    ],
+    "originalSize": [
+      512,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

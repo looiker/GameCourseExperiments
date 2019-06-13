@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "archer_icon",
+    "texture": "bf818973-c543-403d-9162-728b03d3128c",
+    "atlas": "",
+    "rect": [
+      20,
+      11,
+      149,
+      173
+    ],
+    "offset": [
+      -5.5,
+      2.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
