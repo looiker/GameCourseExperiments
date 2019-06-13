@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c21d38c5-f639-4f72-b140-c91e571a4672",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "gunturret_icon": {
+      "ver": "1.0.3",
+      "uuid": "f6453fbc-bff9-4a5f-bf98-1b8350e99f7b",
+      "rawTextureUuid": "c21d38c5-f639-4f72-b140-c91e571a4672",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 16.5,
+      "offsetY": 0,
+      "trimX": 33,
+      "trimY": 0,
+      "width": 200,
+      "height": 200,
+      "rawWidth": 233,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
