@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "uibar_1",
+    "name": "uibar",
     "texture": "7a525850-309c-4c6c-8c4a-904e338e4eba",
     "atlas": "",
     "rect": [

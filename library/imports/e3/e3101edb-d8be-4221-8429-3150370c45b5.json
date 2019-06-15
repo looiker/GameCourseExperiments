@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "update_4",
+    "name": "update",
     "texture": "67d07e4f-914b-492d-b45d-6940f5127664",
     "atlas": "",
     "rect": [

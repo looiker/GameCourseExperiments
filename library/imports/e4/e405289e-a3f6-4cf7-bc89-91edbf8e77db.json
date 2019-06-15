@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "buttonbar_2",
+    "name": "buttonbar",
     "texture": "56ad0598-2b50-4f5c-9fc3-abfbf5e06380",
     "atlas": "",
     "rect": [

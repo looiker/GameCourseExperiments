@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "attack_circle_1",
+    "name": "attack_circle",
     "texture": "8067cec2-c007-43c8-80bf-a53df9890426",
     "atlas": "",
     "rect": [

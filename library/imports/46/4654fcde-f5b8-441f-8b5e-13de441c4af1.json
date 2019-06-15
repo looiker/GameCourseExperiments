@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "Log_picture_1",
+    "name": "Log_picture",
     "texture": "017144c5-7238-42c0-8649-67e8b642a4e3",
     "atlas": "",
     "rect": [

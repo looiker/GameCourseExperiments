@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gunturret1",
+    "texture": "b8219362-ae27-4e2f-bb98-db6f0e068cb9",
+    "atlas": "",
+    "rect": [
+      10,
+      30,
+      107,
+      101
+    ],
+    "offset": [
+      -4.5,
+      -2.5
+    ],
+    "originalSize": [
+      136,
+      156
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

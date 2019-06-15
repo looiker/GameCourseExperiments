@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "Tower_3",
+    "name": "Tower_hover",
     "texture": "5c60c6fb-8a09-4744-99eb-4a287a0e7d10",
     "atlas": "",
     "rect": [

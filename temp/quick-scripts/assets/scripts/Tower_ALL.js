@@ -4,44 +4,69 @@ cc._RF.push(module, '5a719srgwtDFp+E3FwI/LRO', 'Tower_ALL', __filename);
 
 "use strict";
 
-var _Tower = require("./Tower");
+/**
+ * Tower_ALL实现对所有塔的全局调整。
+ * 实现以下功能：
+ * <1>销毁场上菜单函数
+ * 具有以下属性：
+ * 1、塔节点列表
+ * 2、塔预制件列表
+ */
 
-var _Tower2 = _interopRequireDefault(_Tower);
+/**
+ * 添加状态机
+ */
+var TowerPosNodeStateP = {
+    invild: -1,
+    Null: 1,
+    Tower: 2,
+    BuildMenu: 3,
+    UpDateMenu: 4
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-cc.Class({
+var Tower_ALL = cc.Class({
     extends: cc.Component,
     properties: {
-        TowerPrefabs: {
+        Tower: {
             default: [],
-            type: _Tower2.default
-        }
+            type: cc.Node
+        },
+        TowerPrefabs: cc.Prefab
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    onLoad: function onLoad() {},
+    onLoad: function onLoad() {
+        this.ClickBack = this.node.parent.getChildByName("ClickBack");
+    },
 
 
-    on_RetractAllMenu_Clicked: function on_RetractAllMenu_Clicked() {
-        for (var i = 0; i < this.TowerPrefabs.length; i++) {
-            this.TowerPrefabs[i].RetractMenu();
+    /**
+     * 销毁场上菜单
+     */
+    closeMenu: function closeMenu() {
+        //提取列表
+        for (var i = 0; i < this.Tower.length; i++) {
+            //提取节点
+            var node = this.Tower[i];
+            //提取塔对象实例
+            var Tower = node.getComponent("Tower");
+            Tower.attack_circle.opacity = 0;
+            //如果塔处于 未建塔&有菜单  BuildMenu  3 状态
+            //则销毁菜单后，设置塔状态为 未建塔&无菜单 Null 1
+            if (Tower.state === TowerPosNodeStateP.BuildMenu) {
+                Tower.menu.destroy();
+                Tower.state = TowerPosNodeStateP.Null;
+            }
+            //如果塔处于 已建塔&有菜单  UpdateMenu  4 状态
+            //则销毁菜单后，设置塔状态为 已建塔&无菜单 Tower 2
+            if (Tower.state === TowerPosNodeStateP.UpDateMenu) {
+                Tower.menu.destroy();
+                Tower.state = TowerPosNodeStateP.Tower;
+            }
         }
     }
 
     // update (dt) {},
-}); // Learn cc.Class:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
+});
 
 cc._RF.pop();
         }

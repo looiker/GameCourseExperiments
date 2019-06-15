@@ -1,348 +1,65 @@
-2019-06-13T07:36:41.308Z - normal: Load ~/.CocosCreator/settings.json
-2019-06-13T07:36:42.585Z - normal: Initializing Asset Database
-2019-06-13T07:36:42.601Z - normal: checking language setting...
-2019-06-13T07:36:42.601Z - normal: Language: zh
-2019-06-13T07:36:44.363Z - success: preview server running at http://localhost:7456
-2019-06-13T07:36:44.367Z - success: protocol editor-framework registered
-2019-06-13T07:36:44.367Z - success: protocol app registered
-2019-06-13T07:36:44.367Z - success: protocol theme registered
-2019-06-13T07:36:44.367Z - success: protocol packages registered
-2019-06-13T07:36:44.368Z - success: protocol uuid registerred
-2019-06-13T07:36:44.368Z - success: protocol db registerred
-2019-06-13T07:36:44.368Z - success: protocol thumbnail registerred
-2019-06-13T07:36:44.368Z - success: protocol unpack registerred
-2019-06-13T07:36:44.369Z - success: protocol disable-commonjs registerred
-2019-06-13T07:36:44.512Z - normal: connected!
-2019-06-13T07:36:44.513Z - normal: Check project E:\Cocos_Project\GameCourseExperiments
-2019-06-13T07:36:44.516Z - normal: Initializing project E:\Cocos_Project\GameCourseExperiments
-2019-06-13T07:36:45.834Z - normal: Initializing Cocos2d
-2019-06-13T07:36:47.383Z - normal: Initializing engine extends
-2019-06-13T07:36:47.463Z - success: asset-db-debugger loaded
-2019-06-13T07:36:47.466Z - success: baidu-adapter loaded
-2019-06-13T07:36:47.474Z - success: code-editor loaded
-2019-06-13T07:36:47.478Z - success: color-picker loaded
-2019-06-13T07:36:47.697Z - success: fb-audience-network loaded
-2019-06-13T07:36:47.831Z - success: fb-live-stream loaded
-2019-06-13T07:36:47.838Z - success: google-play-instant loaded
-2019-06-13T07:36:47.848Z - success: huawei-runtime loaded
-2019-06-13T07:36:47.849Z - success: jsb-adapter loaded
-2019-06-13T07:36:47.859Z - success: oppo-runtime loaded
-2019-06-13T07:36:47.866Z - success: package-manager loaded
-2019-06-13T07:36:48.133Z - success: qqplay-adapter loaded
-2019-06-13T07:36:48.136Z - success: runtime-dev-tools loaded
-2019-06-13T07:36:48.143Z - success: sdkbox loaded
-2019-06-13T07:36:48.149Z - success: tester loaded
-2019-06-13T07:36:48.154Z - success: ui-grid loaded
-2019-06-13T07:36:48.158Z - success: ui-kit-preview-extra loaded
-2019-06-13T07:36:48.165Z - success: ui-kit-preview loaded
-2019-06-13T07:36:48.170Z - success: ui-kit loaded
-2019-06-13T07:36:48.176Z - success: ui-tree loaded
-2019-06-13T07:36:48.194Z - success: vivo-runtime loaded
-2019-06-13T07:36:48.196Z - success: weapp-adapter loaded
-2019-06-13T07:36:48.265Z - success: assets loaded
-2019-06-13T07:36:48.269Z - success: builder loaded
-2019-06-13T07:36:49.027Z - success: cocos-services loaded
-2019-06-13T07:36:49.035Z - success: console loaded
-2019-06-13T07:36:49.091Z - success: fb-instant-games loaded
-2019-06-13T07:36:49.094Z - success: google-instant-games loaded
-2019-06-13T07:36:49.115Z - success: hierarchy loaded
-2019-06-13T07:36:49.125Z - success: inspector loaded
-2019-06-13T07:36:49.127Z - success: keystore loaded
-2019-06-13T07:36:49.135Z - success: node-library loaded
-2019-06-13T07:36:49.138Z - success: package-asset loaded
-2019-06-13T07:36:49.141Z - success: preferences loaded
-2019-06-13T07:36:49.144Z - success: project-exporter loaded
-2019-06-13T07:36:49.148Z - success: project-importer loaded
-2019-06-13T07:36:49.152Z - success: project-settings loaded
-2019-06-13T07:36:49.158Z - success: scene loaded
-2019-06-13T07:36:49.160Z - success: simulator-debugger loaded
-2019-06-13T07:36:49.164Z - success: sprite-editor loaded
-2019-06-13T07:36:49.170Z - success: store loaded
-2019-06-13T07:36:49.177Z - success: timeline loaded
-2019-06-13T07:36:50.887Z - info: Cocos Services load base data!
-2019-06-13T07:36:56.224Z - normal: Loading packages
-2019-06-13T07:36:56.233Z - normal: Watching packages
-2019-06-13T07:36:57.629Z - normal: Run Application
-2019-06-13T08:39:11.174Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:39:11.178Z - error: A Class already exists with the same __classname__ : "Tower".
-    at E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32
-    at Object.js.setClassName (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:266:17)
-    at doDefine (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:279:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:295:23)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-2019-06-13T08:39:11.179Z - error: A Class already exists with the same __cid__ : "29a9a/6IQZKfYRL/X6lcFzv".
-    at Object._setClassId (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:300:28)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:39:11.179Z - failed: load script [./Tower] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:39:11.180Z - error: Each script can have at most one Component.
-    at Object.cc.errorID (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:287:24)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:41:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:48:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:51:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:39:11.180Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js] failed : TypeError: Cannot set property '_sealed' of null
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:666:25)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:41:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:48:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:51:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-2019-06-13T08:39:11.660Z - warn: Script attached to "Tower_ALL" in prefab "level.prefab" is missing or invalid. Detailed information:
-Node path: "level/Tower_ALL"
-Asset url: "db://assets/prefabs/level.prefab"
-Script UUID: "5a719b2b-830b-4316-9f84-dc5c08fcb44e"
-Class ID: "5a719srgwtDFp+E3FwI/LRO"
-
-2019-06-13T08:39:34.852Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:39:34.852Z - error: A Class already exists with the same __classname__ : "Tower".
-    at E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32
-    at Object.js.setClassName (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:266:17)
-    at doDefine (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:279:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:295:23)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-2019-06-13T08:39:34.853Z - error: A Class already exists with the same __cid__ : "29a9a/6IQZKfYRL/X6lcFzv".
-    at Object._setClassId (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:300:28)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:39:34.853Z - failed: load script [./Tower] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:39:34.853Z - error: Each script can have at most one Component.
-    at Object.cc.errorID (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:287:24)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:43:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:50:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:53:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:39:34.854Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js] failed : TypeError: Cannot set property '_sealed' of null
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:666:25)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:43:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:50:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:53:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-2019-06-13T08:39:35.225Z - warn: Script attached to "Tower_ALL" in prefab "level.prefab" is missing or invalid. Detailed information:
-Node path: "level/Tower_ALL"
-Asset url: "db://assets/prefabs/level.prefab"
-Script UUID: "5a719b2b-830b-4316-9f84-dc5c08fcb44e"
-Class ID: "5a719srgwtDFp+E3FwI/LRO"
-
-2019-06-13T08:40:15.309Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:40:15.310Z - error: A Class already exists with the same __classname__ : "Tower".
-    at E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32
-    at Object.js.setClassName (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:266:17)
-    at doDefine (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:279:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:295:23)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-2019-06-13T08:40:15.311Z - error: A Class already exists with the same __cid__ : "29a9a/6IQZKfYRL/X6lcFzv".
-    at Object._setClassId (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:300:28)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:40:15.311Z - failed: load script [./Tower] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:40:15.311Z - error: Each script can have at most one Component.
-    at Object.cc.errorID (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:287:24)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:43:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:50:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:53:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:40:15.312Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js] failed : TypeError: Cannot set property '_sealed' of null
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:666:25)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:43:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:50:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:53:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-2019-06-13T08:40:15.630Z - warn: Script attached to "Tower_ALL" in prefab "level.prefab" is missing or invalid. Detailed information:
-Node path: "level/Tower_ALL"
-Asset url: "db://assets/prefabs/level.prefab"
-Script UUID: "5a719b2b-830b-4316-9f84-dc5c08fcb44e"
-Class ID: "5a719srgwtDFp+E3FwI/LRO"
-
-2019-06-13T08:40:21.724Z - error: Can not find cc.Component in the script 5a719srgwtDFp+E3FwI/LRO.
-    at Object.addComponent (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:5981)
-    at HTMLElement.add-component (E:\cocos creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:1166)
-    at Object.e._dispatch (E:\cocos creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (E:\cocos creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-06-13T08:40:41.456Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:40:41.457Z - error: A Class already exists with the same __classname__ : "Tower".
-    at E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32
-    at Object.js.setClassName (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:266:17)
-    at doDefine (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:279:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:295:23)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-2019-06-13T08:40:41.457Z - error: A Class already exists with the same __cid__ : "29a9a/6IQZKfYRL/X6lcFzv".
-    at Object._setClassId (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:300:28)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:10:16)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:40:41.457Z - failed: load script [./Tower] failed : ReferenceError: tempTower is not defined
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:244:19)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:250:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:257:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower.js:260:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2019-06-13T08:40:41.457Z - error: Each script can have at most one Component.
-    at Object.cc.errorID (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at define (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:287:24)
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:43:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:50:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:53:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-2019-06-13T08:40:41.457Z - failed: load script [E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js] failed : TypeError: Cannot set property '_sealed' of null
-    at Object.CCClass [as Class] (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:666:25)
-    at __define (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:13:4)
-    at E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:43:13
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:50:11)
-    at Object.<anonymous> (E:\Cocos_Project\GameCourseExperiments\temp\quick-scripts\assets\scripts\Tower_ALL.js:53:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-2019-06-13T08:40:41.739Z - warn: Script attached to "Tower_ALL" in prefab "level.prefab" is missing or invalid. Detailed information:
-Node path: "level/Tower_ALL"
-Asset url: "db://assets/prefabs/level.prefab"
-Script UUID: "5a719b2b-830b-4316-9f84-dc5c08fcb44e"
-Class ID: "5a719srgwtDFp+E3FwI/LRO"
-
+2019-06-15T01:40:35.145Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-15T01:40:36.395Z - normal: Initializing Asset Database
+2019-06-15T01:40:36.473Z - normal: checking language setting...
+2019-06-15T01:40:36.473Z - normal: Language: zh
+2019-06-15T01:40:38.066Z - success: preview server running at http://localhost:7456
+2019-06-15T01:40:38.066Z - success: protocol editor-framework registered
+2019-06-15T01:40:38.066Z - success: protocol app registered
+2019-06-15T01:40:38.066Z - success: protocol theme registered
+2019-06-15T01:40:38.066Z - success: protocol packages registered
+2019-06-15T01:40:38.066Z - success: protocol uuid registerred
+2019-06-15T01:40:38.066Z - success: protocol db registerred
+2019-06-15T01:40:38.066Z - success: protocol thumbnail registerred
+2019-06-15T01:40:38.066Z - success: protocol unpack registerred
+2019-06-15T01:40:38.066Z - success: protocol disable-commonjs registerred
+2019-06-15T01:40:38.191Z - normal: connected!
+2019-06-15T01:40:38.191Z - normal: Check project E:\Cocos_Project\GameCourseExperiments
+2019-06-15T01:40:38.191Z - normal: Initializing project E:\Cocos_Project\GameCourseExperiments
+2019-06-15T01:40:39.066Z - normal: Initializing Cocos2d
+2019-06-15T01:40:40.550Z - normal: Initializing engine extends
+2019-06-15T01:40:40.614Z - success: asset-db-debugger loaded
+2019-06-15T01:40:40.620Z - success: baidu-adapter loaded
+2019-06-15T01:40:40.626Z - success: code-editor loaded
+2019-06-15T01:40:40.631Z - success: color-picker loaded
+2019-06-15T01:40:40.844Z - success: fb-audience-network loaded
+2019-06-15T01:40:41.001Z - success: fb-live-stream loaded
+2019-06-15T01:40:41.016Z - success: google-play-instant loaded
+2019-06-15T01:40:41.016Z - success: huawei-runtime loaded
+2019-06-15T01:40:41.016Z - success: jsb-adapter loaded
+2019-06-15T01:40:41.032Z - success: oppo-runtime loaded
+2019-06-15T01:40:41.032Z - success: package-manager loaded
+2019-06-15T01:40:41.313Z - success: qqplay-adapter loaded
+2019-06-15T01:40:41.313Z - success: runtime-dev-tools loaded
+2019-06-15T01:40:41.329Z - success: sdkbox loaded
+2019-06-15T01:40:41.329Z - success: tester loaded
+2019-06-15T01:40:41.329Z - success: ui-grid loaded
+2019-06-15T01:40:41.344Z - success: ui-kit-preview-extra loaded
+2019-06-15T01:40:41.344Z - success: ui-kit-preview loaded
+2019-06-15T01:40:41.344Z - success: ui-kit loaded
+2019-06-15T01:40:41.344Z - success: ui-tree loaded
+2019-06-15T01:40:41.360Z - success: vivo-runtime loaded
+2019-06-15T01:40:41.360Z - success: weapp-adapter loaded
+2019-06-15T01:40:41.438Z - success: assets loaded
+2019-06-15T01:40:41.438Z - success: builder loaded
+2019-06-15T01:40:42.047Z - success: cocos-services loaded
+2019-06-15T01:40:42.063Z - success: console loaded
+2019-06-15T01:40:42.125Z - success: fb-instant-games loaded
+2019-06-15T01:40:42.125Z - success: google-instant-games loaded
+2019-06-15T01:40:42.141Z - success: hierarchy loaded
+2019-06-15T01:40:42.141Z - success: inspector loaded
+2019-06-15T01:40:42.141Z - success: keystore loaded
+2019-06-15T01:40:42.157Z - success: node-library loaded
+2019-06-15T01:40:42.172Z - success: package-asset loaded
+2019-06-15T01:40:42.172Z - success: preferences loaded
+2019-06-15T01:40:42.172Z - success: project-exporter loaded
+2019-06-15T01:40:42.172Z - success: project-importer loaded
+2019-06-15T01:40:42.172Z - success: project-settings loaded
+2019-06-15T01:40:42.188Z - success: scene loaded
+2019-06-15T01:40:42.188Z - success: simulator-debugger loaded
+2019-06-15T01:40:42.188Z - success: sprite-editor loaded
+2019-06-15T01:40:42.204Z - success: store loaded
+2019-06-15T01:40:42.204Z - success: timeline loaded
+2019-06-15T01:40:45.207Z - normal: Loading packages
+2019-06-15T01:40:45.223Z - normal: Watching packages
+2019-06-15T01:40:45.270Z - info: Cocos Services load base data!
+2019-06-15T01:40:46.598Z - normal: Run Application
