@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 /**
  * Created by youlicc on 2019/6/14
- * Tower调用Tower_ALL中方法
+ * Tower是单个塔的类，负责其中的塔的各项属性，以及塔基的点击事件
  * Tower具有四种状态（state）：
  *                  1、未建塔&无菜单  Null       1
  *                  2、已建塔&无菜单  Tower      2

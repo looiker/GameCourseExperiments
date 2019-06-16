@@ -1,74 +1,64 @@
-// Learn cc.Class:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-
-cc.Class({
+/**
+ * Created by youlicc on 2019/6/16
+ * Map_ui是每个关卡中的界面，负责及时记录当前时间的关卡状态（血量、钱币、怪物波数、是否暂停、是否退出）
+ * 开始游戏、暂停游戏，需要调用level中的函数，不是Map_ui应该实现的功能
+ * 
+ * Map_ui实现以下功能：
+ * <1>实时记录并修改关卡状态：血量、钱币、怪物波数
+ * <2>点击开始按钮，开始本关游戏，游戏时间轴开始
+ * <3>点击暂停按钮，游戏进入暂停状态，创建暂停窗口，创建阻止游戏按钮，并暂停游戏时间轴
+ * Map_ui具有以下属性：
+ * 1、钱币节点
+ * 2、血量节点
+ * 3、怪物波数节点
+ * 4、开始按钮
+ * 5、暂停按钮
+ * 6、暂停窗口预制件
+ */
+var Map_ui = cc.Class({
     extends: cc.Component,
 
     properties: {
         diamond:cc.Node,
 		HP:cc.Node,
 		Wave:cc.Node,
+		Start_button:cc.Node,
 		Pause_button:cc.Node,
-		Pause_Frame:cc.Node,
-    },
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
+		PauseFramePrefab:cc.Prefab,
+	},
+	
     onLoad(){
 		//左上角数据初始化
 		this.diamond.children[2].getComponent(cc.Label).string="1500";
 		this.HP.children[2].getComponent(cc.Label).string="15/15";
 		this.Wave.children[2].getComponent(cc.Label).string="9/9    波";
-		//暂停窗口初始化
-		this.Pause_Frame.getComponent(cc.Widget).isAligenTop=true;
-		this.Pause_Frame.getComponent(cc.Widget).isAligenBottom=true;
-		this.Pause_Frame.getComponent(cc.Widget).target=this.node;
-		//隐藏暂停窗口
-		this.Pause_Frame.opacity=0;
-		//禁用暂停窗口按钮
-		this.Pause_Frame.children[3].getComponent(cc.Button).interactable=false;
-		this.Pause_Frame.children[4].getComponent(cc.Button).interactable=false;
-		//将暂停窗口移动到屏幕外
-		this.Pause_Frame.getComponent(cc.Widget).top=-0.75;
-		this.Pause_Frame.getComponent(cc.Widget).bottom=1.25;
-		this.Pause_Frame.getComponent(cc.Widget).updateAlignment();
 	},
 
+	/**
+	 * 点击暂停按钮
+	 * 创建暂停窗口，创建阻止游戏按钮，并暂停游戏时间轴
+	 */
     On_Pause_clicked:function(){
-		//显示暂停窗口
-		this.Pause_Frame.opacity=255;
-		//激活暂停窗口按钮
-		this.Pause_Frame.children[3].getComponent(cc.Button).interactable=true;
-		this.Pause_Frame.children[4].getComponent(cc.Button).interactable=true;
-		//将暂停窗口移动到屏幕内
-		this.Pause_Frame.getComponent(cc.Widget).top=0.25;
-		this.Pause_Frame.getComponent(cc.Widget).bottom=0.25;
-		this.Pause_Frame.getComponent(cc.Widget).updateAlignment();
+		this.CreatPauseFrame();
+		let level = this.node.parent.getComponent("level");
+		level.CreatPauseInvalidButton();
 	},
-	
-	On_PauseFrameCancel_clicked:function(){
-		//隐藏暂停窗口
-		this.Pause_Frame.opacity=0;
-		//禁用暂停窗口按钮
-		this.Pause_Frame.children[3].getComponent(cc.Button).interactable=false;
-		this.Pause_Frame.children[4].getComponent(cc.Button).interactable=false;
-		//将暂停窗口移动到屏幕外
-		this.Pause_Frame.getComponent(cc.Widget).top=-0.75;
-		this.Pause_Frame.getComponent(cc.Widget).bottom=1.25;
-		this.Pause_Frame.getComponent(cc.Widget).updateAlignment();
+
+	/**
+	 * 销毁暂停窗口
+	 */
+	ClosePauseFrame:function(){
+		this.node.getChildByName("PauseFrame").destroy();
 	},
-	
-	On_PauseFrameYes_clicked:function(){
-		//场景退回选关界面
-		cc.director.loadScene("SelectMap");
+
+	/**
+	 * 创建暂停窗口
+	 */
+	CreatPauseFrame:function(){
+		//预制件节点化
+		let pauseframe = cc.instantiate(this.PauseFramePrefab);
+		//添加父节点
+		pauseframe.parent = this.node;
 	},
+
 });

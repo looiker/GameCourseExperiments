@@ -309,19 +309,14 @@
     "meta": 1560411378132,
     "relativePath": "prefabs"
   },
-  "a3a04c49-eabc-488e-a45a-c93a05febf14": {
-    "asset": 1560411378147,
-    "meta": 1560411412193,
-    "relativePath": "prefabs\\backgroud.prefab"
-  },
   "e85b1b0f-0575-4864-b784-be4c0eec80e1": {
-    "asset": 1560563268706,
-    "meta": 1560563268728,
+    "asset": 1560676131782,
+    "meta": 1560676131821,
     "relativePath": "prefabs\\level.prefab"
   },
   "f6290902-35c7-44e3-bf43-5f0d1db4ebe1": {
-    "asset": 1560526130607,
-    "meta": 1560526130632,
+    "asset": 1560678719677,
+    "meta": 1560678719699,
     "relativePath": "prefabs\\Map_ui.prefab"
   },
   "d99643f0-c4ae-4c8a-893a-8953c2a16d55": {
@@ -329,14 +324,9 @@
     "meta": 1560411412261,
     "relativePath": "prefabs\\Map.prefab"
   },
-  "e26081c0-ef7e-4e74-923c-aaaf1aed92fc": {
-    "asset": 1560411378138,
-    "meta": 1560411412269,
-    "relativePath": "prefabs\\PauseFrame.prefab"
-  },
   "a93c75f6-b816-475f-9ac2-28dfa77d58d2": {
-    "asset": 1560536913321,
-    "meta": 1560536913341,
+    "asset": 1560670837146,
+    "meta": 1560670837262,
     "relativePath": "prefabs\\Tower_ALL.prefab"
   },
   "a7f45392-fa93-492f-bf78-ad46101d8da3": {
@@ -350,8 +340,8 @@
     "relativePath": "prefabs\\Tower.prefab"
   },
   "d1cc5c71-dd21-49dc-9a70-f0704b589c9f": {
-    "asset": 1560540798147,
-    "meta": 1560540798193,
+    "asset": 1560679224623,
+    "meta": 1560679224648,
     "relativePath": "scenes\\game_scene.fire"
   },
   "399984bf-91a8-4199-8e54-72ef30ee41ab": {
@@ -360,18 +350,18 @@
     "relativePath": "scenes\\MainMenu.fire"
   },
   "7d775f36-8115-4d44-883c-c0fa101edec8": {
-    "asset": 1560563989666,
-    "meta": 1560563989699,
+    "asset": 1560679320088,
+    "meta": 1560679320138,
     "relativePath": "scenes\\map_01.fire"
   },
   "e5d63e30-668f-4578-b4e1-63843531b52d": {
-    "asset": 1560564438450,
-    "meta": 1560564438490,
+    "asset": 1560679362545,
+    "meta": 1560679362575,
     "relativePath": "scenes\\map_02.fire"
   },
   "abea1c72-6bbe-4f41-a6d5-29f044d0e684": {
-    "asset": 1560564722631,
-    "meta": 1560564722671,
+    "asset": 1560679394749,
+    "meta": 1560679394770,
     "relativePath": "scenes\\map_03.fire"
   },
   "2e115bc3-b211-4835-a7fe-f9ffd6134add": {
@@ -388,11 +378,6 @@
     "asset": 1560411378180,
     "meta": 1560411413235,
     "relativePath": "scripts\\MainMenu_ui.js"
-  },
-  "ea5127d8-93dd-496f-870c-f9e57990efe5": {
-    "asset": 1560411378183,
-    "meta": 1560411413337,
-    "relativePath": "scripts\\Map_ui.js"
   },
   "01657981-9e6b-4e00-ab6d-a87f38affa0d": {
     "asset": 1560411378182,
@@ -644,11 +629,6 @@
     "meta": 1560531728291,
     "relativePath": "prefabs\\menu_update.prefab"
   },
-  "4334fa05-a15c-4cc8-8de4-4f68fe90615c": {
-    "asset": 1560514209666,
-    "meta": 1560514480122,
-    "relativePath": "scripts\\level.js"
-  },
   "1beea9d3-9e44-4b3a-901a-04f06d5489e5": {
     "asset": 1560524907860,
     "meta": 1560524907882,
@@ -679,11 +659,6 @@
     "meta": 1560526642452,
     "relativePath": "prefabs\\Select_UI.prefab"
   },
-  "29a9affa-2106-4a7d-844b-fd7ea5705cef": {
-    "asset": 1560536779091,
-    "meta": 1560536793248,
-    "relativePath": "scripts\\Tower.js"
-  },
   "5a719b2b-830b-4316-9f84-dc5c08fcb44e": {
     "asset": 1560563878418,
     "meta": 1560563880981,
@@ -693,5 +668,75 @@
     "asset": 1560563976282,
     "meta": 1560563982795,
     "relativePath": "scripts\\Menu.js"
+  },
+  "a3e703bb-fd59-487b-9d2f-bbdb7e229964": {
+    "asset": 1560670486593,
+    "meta": 1560670486749,
+    "relativePath": "texture\\TowerUi\\pause_button_2.png"
+  },
+  "8f8ba606-9bd5-4635-ae6c-9e96a2f3cbf6": {
+    "asset": 1560670486591,
+    "meta": 1560670486763,
+    "relativePath": "texture\\TowerUi\\pause_button_4.png"
+  },
+  "1b400fc2-7579-41da-969b-e633ffbb52b2": {
+    "asset": 1560670486594,
+    "meta": 1560670486807,
+    "relativePath": "texture\\TowerUi\\start_button_4.png.png"
+  },
+  "7fc7aa5c-fc39-4e56-84a0-877320ee3d8e": {
+    "asset": 1560670486592,
+    "meta": 1560670486818,
+    "relativePath": "texture\\TowerUi\\start_button_1.png"
+  },
+  "6f4f9df2-cb26-41c4-94b9-f92ff1e2664b": {
+    "asset": 1560670486594,
+    "meta": 1560670486853,
+    "relativePath": "texture\\TowerUi\\pause_button_3.png"
+  },
+  "f3015d75-b5f6-47e5-8dc1-aa56a72de669": {
+    "asset": 1560670486595,
+    "meta": 1560670486859,
+    "relativePath": "texture\\TowerUi\\start_button_2.png"
+  },
+  "d42d0ab8-4deb-471c-8971-f3ce9c66813a": {
+    "asset": 1560670486664,
+    "meta": 1560670486885,
+    "relativePath": "texture\\TowerUi\\start_button_3.png.png"
+  },
+  "73a367fe-1c71-41f3-988a-d23072f19dbf": {
+    "asset": 1560670486663,
+    "meta": 1560670486888,
+    "relativePath": "texture\\TowerUi\\pause_button_1.png"
+  },
+  "29a9affa-2106-4a7d-844b-fd7ea5705cef": {
+    "asset": 1560673519742,
+    "meta": 1560673934332,
+    "relativePath": "scripts\\Tower.js"
+  },
+  "d65583aa-3c77-454b-853c-b9836c729fe6": {
+    "asset": 1560674866750,
+    "meta": 1560674866771,
+    "relativePath": "prefabs\\PauseInvalidButton.prefab"
+  },
+  "f5b08cdb-93a3-4aba-b8ef-67464f105dd5": {
+    "asset": 1560677976165,
+    "meta": 1560677976182,
+    "relativePath": "prefabs\\PauseFrame.prefab"
+  },
+  "4334fa05-a15c-4cc8-8de4-4f68fe90615c": {
+    "asset": 1560678342814,
+    "meta": 1560678606835,
+    "relativePath": "scripts\\level.js"
+  },
+  "ea5127d8-93dd-496f-870c-f9e57990efe5": {
+    "asset": 1560679160635,
+    "meta": 1560679208970,
+    "relativePath": "scripts\\Map_ui.js"
+  },
+  "06d4d887-c73f-43aa-9c1d-8ddb5e87ce53": {
+    "asset": 1560679175450,
+    "meta": 1560679208971,
+    "relativePath": "scripts\\PauseFrame.js"
   }
 }
