@@ -7,8 +7,8 @@
       "windowType": "dockable",
       "x": -8,
       "y": -8,
-      "width": 1382,
-      "height": 744,
+      "width": 1552,
+      "height": 840,
       "layout": {
         "children": [
           {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 312,
+                "height": 361.4875183105469,
                 "type": "panel",
-                "width": 221
+                "width": 250.0625
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 311,
+                "height": 357.5,
                 "type": "panel",
-                "width": 221
+                "width": 250.0625
               }
             ],
-            "height": 625,
+            "height": 721,
             "type": "dock-v",
-            "width": 221
+            "width": 250.0625
           },
           {
             "children": [
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 311,
+                "height": 359,
                 "type": "panel",
-                "width": 683.984375
+                "width": 770.2000122070312
               },
               {
                 "active": 0,
@@ -53,14 +53,14 @@
                   "console",
                   "timeline"
                 ],
-                "height": 312,
+                "height": 360,
                 "type": "panel",
-                "width": 683.984375
+                "width": 770.2000122070312
               }
             ],
-            "height": 625,
+            "height": 721,
             "type": "dock-v",
-            "width": 683.984375
+            "width": 770.2000122070312
           },
           {
             "active": 0,
@@ -68,9 +68,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 625,
+            "height": 721,
             "type": "panel",
-            "width": 457
+            "width": 514.1375122070312
           }
         ],
         "type": "dock-h"
