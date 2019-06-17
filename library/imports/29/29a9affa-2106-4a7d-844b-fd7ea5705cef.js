@@ -56,7 +56,7 @@ var Tower = cc.Class({
 		TowerBasic: cc.Node,
 		attack_circle: cc.Node,
 		SizeOfAttack: 1.0,
-		RadiusOfAttack: 320,
+		RadiusOfAttack: 60,
 		state: 1,
 		TowerLevel: 0,
 		TowerType: 0,
@@ -119,7 +119,10 @@ var Tower = cc.Class({
 			var menu = cc.instantiate(this.BuildMenuPrefab);
 			//添加父节点、坐标
 			menu.parent = this.node;
-			menu.position = this.node.position;
+			//menu.position = this.node.position;
+			//检查是否塔按钮是否出界
+			var checkout = menu.getComponent("Menu");
+			checkout.CheckBuildMenu();
 			//添加到塔的属性中
 			this.menu = menu;
 			//修改塔的状态
@@ -147,7 +150,10 @@ var Tower = cc.Class({
 			var menu = cc.instantiate(this.UpdateMenuPrefab);
 			//添加父子节点、坐标
 			menu.parent = this.node;
-			menu.position = this.node.position;
+			//menu.position = this.node.position;
+			//检查是否塔按钮是否出界
+			var checkout = menu.getComponent("Menu");
+			checkout.CheckUpdateMenu();
 			//添加到塔的属性中
 			this.menu = menu;
 			//修改塔的状态

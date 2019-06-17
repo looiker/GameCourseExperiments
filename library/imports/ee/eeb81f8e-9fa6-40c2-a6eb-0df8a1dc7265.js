@@ -118,7 +118,7 @@ var Menu = cc.Class({
         towerbasic.hoverSprite = tempSprite;
 
         tower.SizeOfAttack = 0.8;
-        tower.RadiusOfAttack = 320 * tower.SizeOfAttack;
+        tower.RadiusOfAttack = 60 * tower.SizeOfAttack;
         tower.attack_circle.children[0].scale = tower.SizeOfAttack;
         tower.TowerLevel = 1;
         tower.TowerType = 3;
@@ -151,7 +151,7 @@ var Menu = cc.Class({
                     towerbasic.hoverSprite = tempSprite;
                     //修改塔属性
                     tower.SizeOfAttack = 2.0;
-                    tower.RadiusOfAttack = 320 * tower.SizeOfAttack;
+                    tower.RadiusOfAttack = 60 * tower.SizeOfAttack;
                     tower.attack_circle.children[0].scale = tower.SizeOfAttack;
                     tower.TowerLevel += 1;
                     tower.TowerType = 10;
@@ -171,7 +171,7 @@ var Menu = cc.Class({
                     _towerbasic.hoverSprite = _tempSprite;
 
                     tower.SizeOfAttack = 1.2;
-                    tower.RadiusOfAttack = 320 * tower.SizeOfAttack;
+                    tower.RadiusOfAttack = 60 * tower.SizeOfAttack;
                     tower.attack_circle.children[0].scale = tower.SizeOfAttack;
                     tower.TowerLevel += 1;
                     tower.TowerType = 20;
@@ -233,6 +233,105 @@ var Menu = cc.Class({
         tower_all.closeMenu();
         //设置塔状态为Null
         tower.setTowerState(TowerPosNodeStateP.Null);
+    },
+
+    /**
+     * 检查建造菜单位置
+     * 保证三个塔按钮不超出背景显示区域，若超出则旋转至不超出的位置
+     */
+    CheckBuildMenu: function CheckBuildMenu() {
+        var check = false;
+        var flag = 0;
+        //获取按钮
+        var archer_button = this.Archer.getChildByName("archer_button");
+        var caster_button = this.Caster.getChildByName("caster_button");
+        var gunturret_button = this.Gunturret.getChildByName("gunturret_button");
+        //获取背景显示区域
+        var levelnode = this.node.parent.parent.parent;
+        var levelnode_position = levelnode.convertToWorldSpaceAR(cc.v2(0, 0));
+        var level_left = levelnode_position.x - levelnode.width / 2;
+        var level_right = levelnode_position.x + levelnode.width / 2;
+        var level_top = levelnode_position.y + levelnode.height / 2;
+        var level_bottom = levelnode_position.y - levelnode.height / 2;
+
+        while (check === false) {
+            //获取三个塔按钮坐标
+            var archer_button_position = archer_button.convertToWorldSpaceAR(cc.v2(0, 0));
+            var caster_button_position = caster_button.convertToWorldSpaceAR(cc.v2(0, 0));
+            var gunturret_button_position = gunturret_button.convertToWorldSpaceAR(cc.v2(0, 0));
+
+            //检查箭塔按钮
+            if (archer_button_position.x > level_left && archer_button_position.x < level_right && archer_button_position.y > level_bottom && archer_button_position.y < level_top) {
+                flag += 1;
+            }
+            //检查魔法塔按钮
+            if (caster_button_position.x > level_left && caster_button_position.x < level_right && caster_button_position.y > level_bottom && caster_button_position.y < level_top) {
+                flag += 1;
+            }
+            //检查炮塔按钮
+            if (gunturret_button_position.x > level_left && gunturret_button_position.x < level_right && gunturret_button_position.y > level_bottom && gunturret_button_position.y < level_top) {
+                flag += 1;
+            }
+            //通过flag判断是否超出
+            if (flag === 3) {
+                check = true;
+                return check;
+            } else if (flag != 3) {
+                //菜单顺时针旋转30°
+                this.node.rotation += 30;
+                //图标保持竖直
+                this.Archer.rotation -= 30;
+                this.Caster.rotation -= 30;
+                this.Gunturret.rotation -= 30;
+                flag = 0;
+            }
+        }
+    },
+
+    /**
+     * 检查升级菜单位置
+     * 保证三个塔按钮不超出背景显示区域，若超出则旋转至不超出的位置
+     */
+    CheckUpdateMenu: function CheckUpdateMenu() {
+        var check = false;
+        var flag = 0;
+        //获取按钮
+        var update_button = this.Update.getChildByName("update_button");
+        var sale_button = this.Sale.getChildByName("sale_button");
+        //获取背景显示区域
+        var levelnode = this.node.parent.parent.parent;
+        var levelnode_position = levelnode.convertToWorldSpaceAR(cc.v2(0, 0));
+        var level_left = levelnode_position.x - levelnode.width / 2;
+        var level_right = levelnode_position.x + levelnode.width / 2;
+        var level_top = levelnode_position.y + levelnode.height / 2;
+        var level_bottom = levelnode_position.y - levelnode.height / 2;
+
+        while (check === false) {
+            //获取三个塔按钮坐标
+            var update_button_position = update_button.convertToWorldSpaceAR(cc.v2(0, 0));
+            var sale_button_position = sale_button.convertToWorldSpaceAR(cc.v2(0, 0));
+
+            //检查升级按钮
+            if (update_button_position.x > level_left && update_button_position.x < level_right && update_button_position.y > level_bottom && update_button_position.y < level_top) {
+                flag += 1;
+            }
+            //检查售卖按钮
+            if (sale_button_position.x > level_left && sale_button_position.x < level_right && sale_button_position.y > level_bottom && sale_button_position.y < level_top) {
+                flag += 1;
+            }
+            //通过flag判断是否超出
+            if (flag === 2) {
+                check = true;
+                return check;
+            } else if (flag != 2) {
+                //菜单顺时针旋转30°
+                this.node.rotation += 30;
+                //图标保持竖直
+                this.Update.rotation -= 30;
+                this.Sale.rotation -= 30;
+                flag = 0;
+            }
+        }
     }
 });
 

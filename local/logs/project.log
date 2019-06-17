@@ -1,139 +1,66 @@
-2019-06-16T07:20:57.120Z - normal: Load ~/.CocosCreator/settings.json
-2019-06-16T07:20:58.482Z - normal: Initializing Asset Database
-2019-06-16T07:20:58.569Z - normal: checking language setting...
-2019-06-16T07:20:58.569Z - normal: Language: zh
-2019-06-16T07:21:00.526Z - success: preview server running at http://localhost:7456
-2019-06-16T07:21:00.530Z - success: protocol editor-framework registered
-2019-06-16T07:21:00.530Z - success: protocol app registered
-2019-06-16T07:21:00.530Z - success: protocol theme registered
-2019-06-16T07:21:00.530Z - success: protocol packages registered
-2019-06-16T07:21:00.530Z - success: protocol uuid registerred
-2019-06-16T07:21:00.530Z - success: protocol db registerred
-2019-06-16T07:21:00.530Z - success: protocol thumbnail registerred
-2019-06-16T07:21:00.530Z - success: protocol unpack registerred
-2019-06-16T07:21:00.531Z - success: protocol disable-commonjs registerred
-2019-06-16T07:21:00.635Z - normal: connected!
-2019-06-16T07:21:00.638Z - normal: Check project E:\Cocos_Project\GameCourseExperiments
-2019-06-16T07:21:00.641Z - normal: Initializing project E:\Cocos_Project\GameCourseExperiments
-2019-06-16T07:21:01.925Z - normal: Initializing Cocos2d
-2019-06-16T07:21:03.542Z - normal: Initializing engine extends
-2019-06-16T07:21:03.630Z - success: asset-db-debugger loaded
-2019-06-16T07:21:03.633Z - success: baidu-adapter loaded
-2019-06-16T07:21:03.641Z - success: code-editor loaded
-2019-06-16T07:21:03.646Z - success: color-picker loaded
-2019-06-16T07:21:03.878Z - success: fb-audience-network loaded
-2019-06-16T07:21:04.024Z - success: fb-live-stream loaded
-2019-06-16T07:21:04.031Z - success: google-play-instant loaded
-2019-06-16T07:21:04.042Z - success: huawei-runtime loaded
-2019-06-16T07:21:04.043Z - success: jsb-adapter loaded
-2019-06-16T07:21:04.053Z - success: oppo-runtime loaded
-2019-06-16T07:21:04.059Z - success: package-manager loaded
-2019-06-16T07:21:04.332Z - success: qqplay-adapter loaded
-2019-06-16T07:21:04.336Z - success: runtime-dev-tools loaded
-2019-06-16T07:21:04.343Z - success: sdkbox loaded
-2019-06-16T07:21:04.351Z - success: tester loaded
-2019-06-16T07:21:04.355Z - success: ui-grid loaded
-2019-06-16T07:21:04.359Z - success: ui-kit-preview-extra loaded
-2019-06-16T07:21:04.363Z - success: ui-kit-preview loaded
-2019-06-16T07:21:04.367Z - success: ui-kit loaded
-2019-06-16T07:21:04.370Z - success: ui-tree loaded
-2019-06-16T07:21:04.383Z - success: vivo-runtime loaded
-2019-06-16T07:21:04.384Z - success: weapp-adapter loaded
-2019-06-16T07:21:04.476Z - success: assets loaded
-2019-06-16T07:21:04.480Z - success: builder loaded
-2019-06-16T07:21:05.077Z - success: cocos-services loaded
-2019-06-16T07:21:05.084Z - success: console loaded
-2019-06-16T07:21:05.136Z - success: fb-instant-games loaded
-2019-06-16T07:21:05.140Z - success: google-instant-games loaded
-2019-06-16T07:21:05.151Z - success: hierarchy loaded
-2019-06-16T07:21:05.162Z - success: inspector loaded
-2019-06-16T07:21:05.165Z - success: keystore loaded
-2019-06-16T07:21:05.175Z - success: node-library loaded
-2019-06-16T07:21:05.180Z - success: package-asset loaded
-2019-06-16T07:21:05.183Z - success: preferences loaded
-2019-06-16T07:21:05.185Z - success: project-exporter loaded
-2019-06-16T07:21:05.189Z - success: project-importer loaded
-2019-06-16T07:21:05.193Z - success: project-settings loaded
-2019-06-16T07:21:05.200Z - success: scene loaded
-2019-06-16T07:21:05.203Z - success: simulator-debugger loaded
-2019-06-16T07:21:05.206Z - success: sprite-editor loaded
-2019-06-16T07:21:05.213Z - success: store loaded
-2019-06-16T07:21:05.220Z - success: timeline loaded
-2019-06-16T07:21:07.688Z - info: Cocos Services load base data!
-2019-06-16T07:21:07.885Z - normal: Loading packages
-2019-06-16T07:21:07.895Z - normal: Watching packages
-2019-06-16T07:21:09.218Z - normal: Run Application
-2019-06-16T07:47:57.635Z - warn: Failed to set property Start_button<Button> to [object Object] at target, TypeError: Cannot read property 'off' of null
-    at cc_Button._unregisterTargetEvent (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\components\CCButton.js:372:27)
-    at cc_Button.notify (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\components\CCButton.js:189:34)
-    at cc_Button.val.set (E:\cocos creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:44:28)
-    at cc_Button.n.set [as target] (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\lib\asset-watcher.js:1:782)
-    at n (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:1373)
-    at u (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:1991)
-    at y (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:3802)
-    at Object.b [as setPropertyByPath] (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:5028)
-    at Object.setProperty (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:8276)
-    at HTMLElement.set-property (E:\cocos creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:782)
-2019-06-16T08:38:34.827Z - warn: The Asset used by component "cc.Sprite" in prefab "backgroud.prefab" is missing. Detailed information:
-Node path: "backgroud/diamond"
-Asset url: "db://assets/prefabs/backgroud.prefab"
-Missing uuid: "590f6167-fc4c-4d9b-a9b3-abc1571b6861"
-
-2019-06-16T08:38:34.830Z - warn: The Asset used by component "cc.Sprite" in prefab "backgroud.prefab" is missing. Detailed information:
-Node path: "backgroud/HP"
-Asset url: "db://assets/prefabs/backgroud.prefab"
-Missing uuid: "590f6167-fc4c-4d9b-a9b3-abc1571b6861"
-
-2019-06-16T08:38:34.832Z - warn: The Asset used by component "cc.Sprite" in prefab "backgroud.prefab" is missing. Detailed information:
-Node path: "backgroud/Wave"
-Asset url: "db://assets/prefabs/backgroud.prefab"
-Missing uuid: "590f6167-fc4c-4d9b-a9b3-abc1571b6861"
-
-2019-06-16T08:52:06.185Z - error: Reference "_target" of "PauseFrame<Widget>" to external scene object "Map_ui" can not be saved in prefab asset.
-    at E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
-    at r (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
-    at i (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
-    at E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
-    at f (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
-    at Object.c.getDumpableNode (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
-    at Object.c.createPrefabFrom (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
-    at Object.createPrefab (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
-    at HTMLElement.create-prefab (E:\cocos creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
-2019-06-16T08:52:06.187Z - error: Reference "0" of "PauseFrame" to external scene object "Map_ui" can not be saved in prefab asset.
-    at E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
-    at r (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3448)
-    at i (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
-    at E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
-    at f (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
-    at f (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:830)
-    at Object.c.getDumpableNode (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
-    at Object.c.createPrefabFrom (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
-    at Object.createPrefab (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
-2019-06-16T08:52:06.188Z - error: Reference "0" of "PauseFrame" to external scene object "Map_ui" can not be saved in prefab asset.
-    at E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
-    at r (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3448)
-    at i (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
-    at E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
-    at f (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
-    at f (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:830)
-    at Object.c.getDumpableNode (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
-    at Object.c.createPrefabFrom (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
-    at Object.createPrefab (E:\cocos creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
-2019-06-16T09:20:48.538Z - failed: [db-task][sync-changes] Failed to import asset E:\Cocos_Project\GameCourseExperiments\assets\scripts\level.js, message: Compile error: SyntaxError: E:/Cocos_Project/GameCourseExperiments/assets/scripts/level.js: Invalid left-hand side in assignment expression (51:8)
-  49 |         let pauseinvalidbutton = cc.instantiate(this.PauseInvalidButton);
-  50 |         //添加父节点、坐标
-> 51 |         this.node.getChildByName("PauseInvalidButton") = pauseinvalidbutton;
-     |         ^
-  52 |     },
-  53 | });
-  54 | 
-    at Parser.pp$5.raise (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp$2.toAssignable (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3008:16)
-    at Parser.pp$3.parseMaybeAssign (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3349:45)
-    at Parser.pp$3.parseExpression (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
-    at Parser.pp$1.parseStatement (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
-    at Parser.pp$1.parseBlockBody (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
-    at Parser.pp$1.parseBlock (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
-    at Parser.pp$3.parseFunctionBody (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
-    at Parser.pp$1.parseFunction (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2386:8)
-    at Parser.pp$3.parseFunctionExpression (E:\cocos creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3760:17)
+2019-06-17T04:24:50.531Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-17T04:24:51.843Z - normal: Initializing Asset Database
+2019-06-17T04:24:51.859Z - normal: checking language setting...
+2019-06-17T04:24:51.859Z - normal: Language: zh
+2019-06-17T04:24:53.421Z - success: preview server running at http://localhost:7456
+2019-06-17T04:24:53.437Z - success: protocol editor-framework registered
+2019-06-17T04:24:53.437Z - success: protocol app registered
+2019-06-17T04:24:53.437Z - success: protocol theme registered
+2019-06-17T04:24:53.437Z - success: protocol packages registered
+2019-06-17T04:24:53.437Z - success: protocol uuid registerred
+2019-06-17T04:24:53.437Z - success: protocol db registerred
+2019-06-17T04:24:53.437Z - success: protocol thumbnail registerred
+2019-06-17T04:24:53.437Z - success: protocol unpack registerred
+2019-06-17T04:24:53.437Z - success: protocol disable-commonjs registerred
+2019-06-17T04:24:53.530Z - normal: connected!
+2019-06-17T04:24:53.530Z - normal: Check project E:\Cocos_Project\GameCourseExperiments
+2019-06-17T04:24:53.546Z - normal: Initializing project E:\Cocos_Project\GameCourseExperiments
+2019-06-17T04:24:54.499Z - normal: Initializing Cocos2d
+2019-06-17T04:24:56.061Z - normal: Initializing engine extends
+2019-06-17T04:24:56.139Z - success: asset-db-debugger loaded
+2019-06-17T04:24:56.139Z - success: baidu-adapter loaded
+2019-06-17T04:24:56.139Z - success: code-editor loaded
+2019-06-17T04:24:56.154Z - success: color-picker loaded
+2019-06-17T04:24:56.420Z - success: fb-audience-network loaded
+2019-06-17T04:24:56.592Z - success: fb-live-stream loaded
+2019-06-17T04:24:56.592Z - success: google-play-instant loaded
+2019-06-17T04:24:56.607Z - success: huawei-runtime loaded
+2019-06-17T04:24:56.607Z - success: jsb-adapter loaded
+2019-06-17T04:24:56.623Z - success: oppo-runtime loaded
+2019-06-17T04:24:56.623Z - success: package-manager loaded
+2019-06-17T04:24:56.904Z - success: qqplay-adapter loaded
+2019-06-17T04:24:56.920Z - success: runtime-dev-tools loaded
+2019-06-17T04:24:56.920Z - success: sdkbox loaded
+2019-06-17T04:24:56.935Z - success: tester loaded
+2019-06-17T04:24:56.935Z - success: ui-grid loaded
+2019-06-17T04:24:56.951Z - success: ui-kit-preview-extra loaded
+2019-06-17T04:24:56.951Z - success: ui-kit-preview loaded
+2019-06-17T04:24:56.951Z - success: ui-kit loaded
+2019-06-17T04:24:56.967Z - success: ui-tree loaded
+2019-06-17T04:24:56.982Z - success: vivo-runtime loaded
+2019-06-17T04:24:56.982Z - success: weapp-adapter loaded
+2019-06-17T04:24:57.045Z - success: assets loaded
+2019-06-17T04:24:57.060Z - success: builder loaded
+2019-06-17T04:24:57.654Z - success: cocos-services loaded
+2019-06-17T04:24:57.654Z - success: console loaded
+2019-06-17T04:24:57.701Z - success: fb-instant-games loaded
+2019-06-17T04:24:57.716Z - success: google-instant-games loaded
+2019-06-17T04:24:57.716Z - success: hierarchy loaded
+2019-06-17T04:24:57.732Z - success: inspector loaded
+2019-06-17T04:24:57.732Z - success: keystore loaded
+2019-06-17T04:24:57.748Z - success: node-library loaded
+2019-06-17T04:24:57.748Z - success: package-asset loaded
+2019-06-17T04:24:57.748Z - success: preferences loaded
+2019-06-17T04:24:57.748Z - success: project-exporter loaded
+2019-06-17T04:24:57.763Z - success: project-importer loaded
+2019-06-17T04:24:57.763Z - success: project-settings loaded
+2019-06-17T04:24:57.763Z - success: scene loaded
+2019-06-17T04:24:57.779Z - success: simulator-debugger loaded
+2019-06-17T04:24:57.779Z - success: sprite-editor loaded
+2019-06-17T04:24:57.779Z - success: store loaded
+2019-06-17T04:24:57.795Z - success: timeline loaded
+2019-06-17T04:25:00.276Z - normal: Loading packages
+2019-06-17T04:25:00.291Z - normal: Watching packages
+2019-06-17T04:25:00.463Z - info: Cocos Services load base data!
+2019-06-17T04:25:01.916Z - normal: Run Application
+2019-06-17T04:39:37.987Z - info: shutdown preview server

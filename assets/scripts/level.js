@@ -27,12 +27,11 @@ var level = cc.Class({
      */
     onLoad(){
         //创建关卡界面，预制件节点化
-        /*let pauseinvalidbutton = new cc.Node;
-        pauseinvalidbutton.name = "PauseInvalidButton";*/
         let map_ui = cc.instantiate(this.map_ui_Prefab);
         //添加父节点
-        //pauseinvalidbutton.parent = this.node;
         map_ui.parent = this.node;
+        //调整map_ui在子节点中顺序，保证Tower的按钮在其上方
+        map_ui.setSiblingIndex(2);
     },
     /**
      * 游戏开始
@@ -50,6 +49,8 @@ var level = cc.Class({
         let pauseinvalidbutton = cc.instantiate(this.PauseInvalidButton);
         //添加父节点、坐标
         pauseinvalidbutton.parent = this.node;
+        //调整level的子节点的顺序，保证tower被pibutton盖住，pibutton被map_ui盖住
+        this.tower_ALL.setSiblingIndex(2);
         pauseinvalidbutton.setSiblingIndex(3);
     },
 

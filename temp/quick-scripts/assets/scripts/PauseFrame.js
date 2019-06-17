@@ -21,7 +21,7 @@ var PauseFrame = cc.Class({
 
     /**
     * 点击暂停窗口的确定按钮
-     * 场景退回选关界面
+    * 场景退回选关界面
     */
     On_PauseFrameYes_clicked: function On_PauseFrameYes_clicked() {
         cc.director.loadScene("SelectMap");
