@@ -1,3 +1,5 @@
+import global from "./global";
+
 /**
  * Created by youlicc on 2019/6/16
  * Map_ui是每个关卡中的界面，负责及时记录当前时间的关卡状态（血量、钱币、怪物波数、是否暂停、是否退出）
@@ -19,7 +21,7 @@ var Map_ui = cc.Class({
     extends: cc.Component,
 
     properties: {
-        diamond:cc.Node,
+    diamond:cc.Node,
 		HP:cc.Node,
 		Wave:cc.Node,
 		Start_button:cc.Node,
@@ -60,5 +62,10 @@ var Map_ui = cc.Class({
 		//添加父节点
 		pauseframe.parent = this.node;
 	},
+
+  Startgame:function(){
+   cc.log("startbtnclick");
+   global.event.fire("game_start");
+ },
 
 });

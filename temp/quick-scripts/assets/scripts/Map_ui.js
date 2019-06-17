@@ -4,6 +4,12 @@ cc._RF.push(module, 'ea512fYk91Jb4cM+eV5kO/l', 'Map_ui', __filename);
 
 "use strict";
 
+var _global = require("./global");
+
+var _global2 = _interopRequireDefault(_global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /**
  * Created by youlicc on 2019/6/16
  * Map_ui是每个关卡中的界面，负责及时记录当前时间的关卡状态（血量、钱币、怪物波数、是否暂停、是否退出）
@@ -66,6 +72,11 @@ var Map_ui = cc.Class({
 		var pauseframe = cc.instantiate(this.PauseFramePrefab);
 		//添加父节点
 		pauseframe.parent = this.node;
+	},
+
+	Startgame: function Startgame() {
+		cc.log("startbtnclick");
+		_global2.default.event.fire("game_start");
 	}
 
 });
